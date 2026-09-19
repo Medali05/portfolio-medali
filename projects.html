@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — Lebsir Mohamed Ali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="logo" href="index.html"><span class="dot"></span>LEBSIR<span>.DEV</span></a>
+  <button class="nav-toggle">MENU</button>
+  <nav class="navlinks">
+    <a class="navlink" href="index.html" data-i18n="nav_home">nav_home</a>
+      <a class="navlink" href="education.html" data-i18n="nav_education">nav_education</a>
+      <a class="navlink" href="projects.html" data-i18n="nav_projects">nav_projects</a>
+      <a class="navlink" href="skills.html" data-i18n="nav_skills">nav_skills</a>
+      <a class="navlink" href="cv.html" data-i18n="nav_cv">nav_cv</a>
+      <a class="navlink" href="contact.html" data-i18n="nav_contact">nav_contact</a>
+  </nav>
+  <div class="topbar-right">
+    <div class="status-chip"><span class="ping"></span><span data-i18n="status_label">Disponible</span></div>
+    <button class="lang-toggle" id="langToggle">FR / EN</button>
+  </div>
+</div>
+
+<main>
+  <section id="projects">
+    <div class="eyebrow" data-i18n="proj_label">Journal de quêtes</div>
+    <h2 data-i18n="proj_title">Projets</h2>
+
+    <div class="quest-card">
+      <div class="quest-head">
+        <span class="quest-name">LetsAllGo</span>
+        <span class="quest-diff" data-i18n="proj_1_diff">Difficulté : élevée</span>
+      </div>
+      <p class="quest-desc">Plateforme d’e-learning full-stack dédiée à l’apprentissage de l’algorithmique et des structures de données. Le projet vise à proposer une expérience moderne avec des quiz, un système de progression et une logique de motivation pour les étudiants.</p>
+      <ul class="quest-objectives">
+        <li>Système de quiz basé sur des fichiers XML</li>
+        <li>Scoring avec points, niveaux et leaderboard</li>
+        <li>Authentification avec OTP et gestion admin</li>
+        <li>Section de cours avec une progression pour chaque cours</li>
+        <li>un classsement des utilisateurs en fonction de leur niveau et de leurs performances</li>
+      </ul>
+      <div class="badge-row">
+        <span class="badge">Flutter</span><span class="badge">Dart</span><span class="badge">Node.js</span>
+        <span class="badge">TypeScript</span><span class="badge">Prisma</span><span class="badge">Supabase</span><span class="badge">PostgreSQL</span>
+      </div>
+      <a class="gh-link" href="https://github.com/yacine0x0/LetsAllGo" target="_blank" rel="noopener">
+        <svg style="width:15px;height:15px;" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span data-i18n="proj_1_link">Voir le dépôt</span>
+      </a>
+    </div>
+
+    <div class="quest-card">
+      <div class="quest-head">
+        <span class="quest-name">Gestion de livraison</span>
+        <span class="quest-diff">Difficulté : élevée</span>
+      </div>
+      <p class="quest-desc">Projet Java dédié à la gestion des livraisons, avec une logique de suivi des commandes, des clients, des livreurs et des trajets. L’application vise à centraliser les opérations de livraison pour faciliter le suivi, la planification et l’organisation du service.</p>
+      <ul class="quest-objectives">
+        <li>Gestion des commandes et des livraisons</li>
+        <li>Suivi des clients, livreurs et statuts</li>
+        <li>Interface administrative et gestion des données</li>
+      </ul>
+      <div class="badge-row">
+        <span class="badge">Java</span><span class="badge">Spring Boot</span><span class="badge">MySQL</span>
+        <span class="badge">JDBC</span><span class="badge">JavaFX</span>
+      </div>
+      <a class="gh-link" href="https://github.com/Medali05/GestionLivraison.git" target="_blank" rel="noopener">
+        <svg style="width:15px;height:15px;" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>Voir le dépôt</span>
+      </a>
+    </div>
+
+    <div class="quest-card">
+      <div class="quest-head">
+        <span class="quest-name">Portfolio personnel</span>
+        <span class="quest-diff">Difficulté : moyenne</span>
+      </div>
+      <p class="quest-desc">Ce site web sert de vitrine personnelle pour présenter mon parcours, mes compétences, mes projets et mes coordonnées. Il a été conçu pour refléter mon profil d’étudiant en informatique avec une identité visuelle moderne et professionnelle.</p>
+      <div class="badge-row">
+        <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+      </div>
+      <a class="gh-link" href="index.html">Voir le site</a>
+    </div>
+  </section>
+</main>
+
+<footer data-i18n="footer_note">Site personnel — construit avec HTML, CSS et JavaScript.</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

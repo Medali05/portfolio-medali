@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Lebsir Mohamed Ali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="logo" href="index.html"><span class="dot"></span>LEBSIR<span>.DEV</span></a>
+  <button class="nav-toggle">MENU</button>
+  <nav class="navlinks">
+    <a class="navlink" href="index.html" data-i18n="nav_home">nav_home</a>
+      <a class="navlink" href="education.html" data-i18n="nav_education">nav_education</a>
+      <a class="navlink" href="projects.html" data-i18n="nav_projects">nav_projects</a>
+      <a class="navlink" href="skills.html" data-i18n="nav_skills">nav_skills</a>
+      <a class="navlink" href="cv.html" data-i18n="nav_cv">nav_cv</a>
+      <a class="navlink" href="contact.html" data-i18n="nav_contact">nav_contact</a>
+  </nav>
+  <div class="topbar-right">
+    <div class="status-chip"><span class="ping"></span><span data-i18n="status_label">Disponible</span></div>
+    <button class="lang-toggle" id="langToggle">FR / EN</button>
+  </div>
+</div>
+
+<main>
+  <section id="cv">
+    <div class="eyebrow" data-i18n="cv_label">Fichier de sauvegarde</div>
+    <h2 data-i18n="cv_title">Curriculum Vitae</h2>
+
+    <div class="save-card hud">
+      <div class="save-left">
+        <div class="save-icon">PDF</div>
+        <div>
+          <div class="save-name">CV_Lebsir_Mohamed_Ali.pdf</div>
+          <div class="save-sub">Mis à jour récemment</div>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="cv.pdf" download>Télécharger</a>
+    </div>
+    <p style="color:var(--muted); font-size:13px; margin-top:14px;">Ajoutez votre fichier CV au dossier du projet sous le nom <strong>cv.pdf</strong> pour activer le téléchargement.</p>
+  </section>
+</main>
+
+<footer data-i18n="footer_note">Site personnel — construit avec HTML, CSS et JavaScript.</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

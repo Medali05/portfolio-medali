@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil — Lebsir Mohamed Ali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a class="logo" href="index.html"><span class="dot"></span>LEBSIR<span>.DEV</span></a>
+  <button class="nav-toggle">MENU</button>
+  <nav class="navlinks">
+    <a class="navlink" href="index.html" data-i18n="nav_home">nav_home</a>
+      <a class="navlink" href="education.html" data-i18n="nav_education">nav_education</a>
+      <a class="navlink" href="projects.html" data-i18n="nav_projects">nav_projects</a>
+      <a class="navlink" href="skills.html" data-i18n="nav_skills">nav_skills</a>
+      <a class="navlink" href="cv.html" data-i18n="nav_cv">nav_cv</a>
+      <a class="navlink" href="contact.html" data-i18n="nav_contact">nav_contact</a>
+  </nav>
+  <div class="topbar-right">
+    <div class="status-chip"><span class="ping"></span><span data-i18n="status_label">Disponible</span></div>
+    <button class="lang-toggle" id="langToggle">FR / EN</button>
+  </div>
+</div>
+
+<main>
+  <section id="home">
+    <div class="hero">
+      <div>
+        <div class="player-badge" data-i18n="player_badge">Joueur actif · Full-Stack</div>
+        <h1 class="hero-title">Lebsir Mohamed <span class="accent">Ali</span></h1>
+        <div class="hero-role" data-i18n="hero_role">Étudiant en Master Génie Logiciel</div>
+        <p class="hero-bio">Je suis <strong>Lebsir Mohamed Ali</strong>, étudiant en Master Génie Logiciel à l’Université de Béjaïa, passionné par le développement web, le développement mobile et la résolution de problèmes techniques. J’aime concevoir des applications utiles, lisibles et bien structurées, avec un fort intérêt pour les architectures évolutives et les solutions modernes.</p>
+        <div class="cta-row">
+          <a href="cv.html" class="btn btn-primary" data-i18n="btn_cv">Télécharger le CV</a>
+          <a href="contact.html" class="btn btn-ghost" data-i18n="btn_contact">Me contacter</a>
+          <a href="projects.html" class="btn btn-ghost" data-i18n="btn_projects">Voir mes projets</a>
+          <a href="https://github.com/Medali05" target="_blank" rel="noopener" class="btn btn-ghost">Mon GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-frame hud">
+          <img src="1.jpg" alt="Portrait de Lebsir Mohamed Ali" />
+        </div>
+        <div class="mini-focus">
+          <span class="mini-label">Focus actuel</span>
+          <strong>Développement web & mobile</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <article class="about-card">
+        <div class="about-kicker">Profil</div>
+        <h3>Étudiant motivé et curieux</h3>
+        <p>Je suis actuellement en formation avancée en ingénierie logicielle, avec un intérêt particulier pour le développement backend, l’architecture applicative, l’UX et la création de solutions complètes.</p>
+      </article>
+      <article class="about-card">
+        <div class="about-kicker">Objectif</div>
+        <h3>Devenir développeur full-stack</h3>
+        <p>Mon objectif est de maîtriser les technologies modernes et de créer des projets concrets qui allient performance, sécurité, ergonomie et maintenabilité.</p>
+      </article>
+      <article class="about-card">
+        <div class="about-kicker">Centres d’intérêt</div>
+        <h3>Code, IA, apprentissage</h3>
+        <p>J’aime approfondir l’algorithmique, la conception d’API, l’intelligence artificielle appliquée et le développement de produits numériques utiles.</p>
+      </article>
+    </div>
+
+    <section class="interests-section">
+      <div class="eyebrow" style="margin-top:28px;">Loisirs</div>
+      <h2>Mes activités favorites</h2>
+
+      <div class="interest-grid">
+        <article class="interest-card">
+          <img class="interest-image" src="Dragon Ball.jpg" alt="Dragon Ball anime" />
+          <div class="interest-body">
+            <div class="interest-tag">Anime</div>
+            <h3>Dragon Ball</h3>
+            <p>Dragon Ball reste l’un de mes anime préférés grâce à son énergie, ses combats intenses, son esprit de dépassement et la puissance de son univers. C’est un univers qui inspire le courage, la discipline et la persévérance.</p>
+          </div>
+        </article>
+
+        <article class="interest-card">
+          <img class="interest-image" src="JSK-28.jpg" alt="JS Kabylie" />
+          <div class="interest-body">
+            <div class="interest-tag">Club</div>
+            <h3>Jeunesse sportive de Kabylie</h3>
+            <p>Je suis aussi passionné par le football et par l’histoire de la JS Kabylie. Son palmarès prestigieux, son identité et son héritage dans le football algérien me motivent profondément.</p>
+            <ul class="palmares-list">
+              <li>Championnat d’Algérie</li>
+              <li>Coupe d’Algérie</li>
+              <li>Supercoupe d’Algérie</li>
+              <li>Nombreux titres nationaux</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="interest-card">
+          <img class="interest-image" src="Red Dead R2.png" alt="Jeux vidéo Red Dead Redemption" />
+          <div class="interest-body">
+            <div class="interest-tag">Jeux</div>
+            <h3>God of War & Red Dead Redemption</h3>
+            <p>Mes jeux favoris allient aventure, narration et immersion. God of War m’attire par son univers épique, et Red Dead Redemption par son monde riche, son ambiance et son réalisme captivant.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="eyebrow" style="margin-top:56px;" data-i18n="dash_label">Sélectionne une rubrique</div>
+    <h2 data-i18n="dash_title">Menu principal</h2>
+    <div class="menu-grid">
+      <a class="menu-tile" href="education.html">
+        <div class="tile-icon">ED</div>
+        <div class="tile-title" data-i18n="dash_edu_title">Formation</div>
+        <div class="tile-desc" data-i18n="dash_edu_desc">Parcours académique, diplômes</div>
+      </a>
+      <a class="menu-tile" href="projects.html">
+        <div class="tile-icon">PR</div>
+        <div class="tile-title" data-i18n="dash_proj_title">Projets</div>
+        <div class="tile-desc" data-i18n="dash_proj_desc">Quêtes accomplies et code source</div>
+      </a>
+      <a class="menu-tile" href="skills.html">
+        <div class="tile-icon">SK</div>
+        <div class="tile-title" data-i18n="dash_skills_title">Compétences</div>
+        <div class="tile-desc" data-i18n="dash_skills_desc">Langages, frameworks, outils</div>
+      </a>
+      <a class="menu-tile" href="cv.html">
+        <div class="tile-icon">CV</div>
+        <div class="tile-title" data-i18n="dash_cv_title">CV</div>
+        <div class="tile-desc" data-i18n="dash_cv_desc">Télécharger mon curriculum</div>
+      </a>
+      <a class="menu-tile" href="contact.html">
+        <div class="tile-icon">@</div>
+        <div class="tile-title" data-i18n="dash_contact_title">Contact</div>
+        <div class="tile-desc" data-i18n="dash_contact_desc">Réseaux et coordonnées</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer data-i18n="footer_note">Site personnel — construit avec HTML, CSS et JavaScript.</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

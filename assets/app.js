@@ -8,9 +8,9 @@ const dict = {
     nav_contact: "Contact",
     status_label: "Disponible",
 
-    player_badge: "Joueur actif · Full-Stack",
-    hero_role: "Étudiant en Master Génie Logiciel",
-    hero_bio: "Étudiant en Master Génie Logiciel à l'Université de Béjaïa, passionné par le développement web et mobile. Je construis actuellement <strong>LetsAllGo</strong>, une plateforme d'e-learning pour l'algorithmique, tout en explorant les architectures full-stack modernes.",
+    player_badge: "Étudiant · Full-Stack & Sécurité",
+    hero_role: "Master : Administration & Sécurité des Réseaux Informatiques",
+    hero_bio: "Je suis un étudiant motivé en master Administration & Sécurité des Réseaux Informatiques. J’aime le développement Full Stack, la conception logicielle et la protection des systèmes, des réseaux et des données.",
     btn_cv: "Télécharger le CV",
     btn_contact: "Me contacter",
     btn_projects: "Voir mes projets",
@@ -34,7 +34,7 @@ const dict = {
 
     edu_label: "Succès débloqués",
     edu_title: "Formation",
-    edu_m2_title: "Master Génie Logiciel",
+    edu_m2_title: "Master : Administration & Sécurité des Réseaux Informatiques",
     edu_m2_meta: "Université de Béjaïa",
     edu_m2_status: "En cours",
     edu_m2_desc: "Spécialisation en ingénierie logicielle : architectures logicielles, développement full-stack, sécurité informatique, IA appliquée.",
@@ -170,6 +170,21 @@ function applyLang(lang){
   localStorage.setItem("portfolio_lang", lang);
 }
 
+function animateTypewriter(){
+  document.querySelectorAll('.typewriter-text').forEach((el, index) => {
+    const text = el.dataset.text || el.textContent || '';
+    el.textContent = '';
+
+    [...text].forEach((char, i) => {
+      const span = document.createElement('span');
+      span.className = 'type-char';
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.animationDelay = `${(index + i) * 0.05}s`;
+      el.appendChild(span);
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const page = currentPage();
   document.querySelectorAll(".navlink").forEach(el => {
@@ -178,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const saved = localStorage.getItem("portfolio_lang") || "fr";
   applyLang(saved);
+  animateTypewriter();
 
   const toggle = document.getElementById("langToggle");
   if(toggle){

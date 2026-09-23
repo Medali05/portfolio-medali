@@ -265,12 +265,13 @@ h2{font-size:clamp(24px,3.5vw,32px); margin-bottom:24px;}
 .save-sub{color:var(--muted); font-size:13px;}
 
 .friend-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:8px;}
-.friend-card{display:flex; align-items:center; gap:14px; background:rgba(255,255,255,.8); border:1px solid var(--border); padding:16px 18px; border-radius:24px;}
+.friend-card{display:flex; align-items:center; gap:14px; background:rgba(255,255,255,.8); border:1px solid var(--border); padding:16px 18px; border-radius:24px; min-width:0;}
 .friend-card:hover{border-color:var(--accent-dim); text-decoration:none;}
+.friend-card > div:nth-child(2){min-width:0; flex:1;}
 .friend-icon{width:36px; height:36px; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:var(--panel-2); border-radius:12px;}
 .friend-icon svg{width:19px; height:19px;}
 .friend-label{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.6px; font-family:'Rajdhani', sans-serif; font-weight:700;}
-.friend-value{font-size:14px; color:var(--text); font-weight:500;}
+.friend-value{font-size:14px; color:var(--text); font-weight:500; overflow-wrap:anywhere; word-break:break-word;}
 .friend-status{margin-left:auto; width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 6px rgba(26,157,106,.7); flex-shrink:0;}
 
 footer{padding:32px; text-align:center; color:var(--muted); font-size:13px;}

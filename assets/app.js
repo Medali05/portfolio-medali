@@ -346,6 +346,35 @@ function animateTypewriter(){
   });
 }
 
+function forceFileDownload(url, filename) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Fichier introuvable');
+      }
+      return response.blob();
+    })
+    .then(blob => {
+      const objectUrl = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = objectUrl;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+    })
+    .catch(() => {
+      const fallback = document.createElement('a');
+      fallback.href = url;
+      fallback.download = filename;
+      fallback.target = '_blank';
+      document.body.appendChild(fallback);
+      fallback.click();
+      fallback.remove();
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const page = currentPage();
   document.querySelectorAll(".navlink").forEach(el => {
@@ -363,6 +392,15 @@ document.addEventListener("DOMContentLoaded", () => {
       applyLang(current === "fr" ? "en" : "fr");
     });
   }
+
+  document.querySelectorAll('.download-cv').forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const href = link.getAttribute('href');
+      const filename = link.getAttribute('download') || 'CV_Lebsir_Mohamed_Ali.pdf';
+      forceFileDownload(href, filename);
+    });
+  });
 
   const navToggle = document.querySelector(".nav-toggle");
   const navlinks = document.querySelector(".navlinks");

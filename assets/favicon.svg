@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lebsir Mohamed Ali favicon">
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#77d4ff"/>
+      <stop offset="50%" stop-color="#00b7ff"/>
+      <stop offset="100%" stop-color="#0a7bc4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#081e2d"/>
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(119,212,255,0.45)"/>
+  <path d="M20 17h10v20h16v8H20z" fill="url(#g)"/>
+  <path d="M45 18l-10 6v10l10 6v9l-19-10V20l19-9z" fill="#dffaff" opacity="0.9"/>
+  <circle cx="48" cy="18" r="3" fill="#7ef0c9"/>
+</svg>

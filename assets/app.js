@@ -393,6 +393,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const emailLink = document.querySelector('.email-link');
+  if (emailLink) {
+    emailLink.addEventListener('click', async (event) => {
+      const email = emailLink.dataset.email || 'lebsirmohamedali20@gmail.com';
+      const mailtoUrl = `mailto:${email}`;
+      event.preventDefault();
+
+      try {
+        window.location.href = mailtoUrl;
+      } catch (error) {
+        console.warn('mailto launch failed', error);
+      }
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(email);
+        } else if (navigator.clipboard) {
+          await navigator.clipboard.writeText(email);
+        } else {
+          const tempInput = document.createElement('input');
+          tempInput.value = email;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          tempInput.remove();
+        }
+      } catch (error) {
+        console.warn('Clipboard copy failed', error);
+      }
+    });
+  }
+
   document.querySelectorAll('.download-cv').forEach(link => {
     link.addEventListener('click', (event) => {
       event.preventDefault();

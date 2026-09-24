@@ -247,13 +247,30 @@ h2{font-size:clamp(24px,3.5vw,32px); margin-bottom:24px;}
 
 .inv-category{margin-bottom:28px;}
 .inv-cat-label{font-family:'Rajdhani', sans-serif; font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:1.2px; color:var(--muted); margin-bottom:12px;}
-.inv-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(120px,1fr)); gap:10px;}
+.inv-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:12px;}
 .inv-slot{
   background:rgba(255,255,255,.8); border:1px solid var(--border);
   padding:14px 10px; text-align:center;
   font-family:'Rajdhani', sans-serif; font-weight:600; font-size:14px; border-radius:18px;
 }
 .inv-slot:hover{border-color:var(--accent); color:var(--accent);}
+
+.skill-card{
+  display:flex; align-items:center; justify-content:flex-start; gap:10px;
+  min-height:64px; padding:12px 14px; text-align:left;
+}
+.skill-logo{
+  width:28px; height:28px; min-width:28px; display:flex; align-items:center; justify-content:center;
+  border-radius:10px; background:rgba(10,123,196,.08); overflow:hidden;
+}
+.skill-logo svg{width:100%; height:100%; display:block;}
+.skill-logo.initials{
+  background:linear-gradient(135deg, rgba(10,123,196,.12), rgba(21,114,182,.08));
+  color:var(--accent); font-size:9px; font-weight:700; letter-spacing:.06em;
+  font-family:'JetBrains Mono', monospace; border:1px solid rgba(10,123,196,.12);
+}
+.skill-name{display:block; font-size:13px; line-height:1.2; color:var(--text);}
+.inv-slot:hover .skill-name{color:var(--accent);}
 
 .save-card{
   display:flex; align-items:center; justify-content:space-between; gap:20px;

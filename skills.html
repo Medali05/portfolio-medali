@@ -37,83 +37,305 @@
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_lang">Langages</div>
       <div class="inv-grid">
-        <div class="inv-slot">Python</div>
-        <div class="inv-slot">Java</div>
-        <div class="inv-slot">JavaScript</div>
-        <div class="inv-slot">TypeScript</div>
-        <div class="inv-slot">Dart</div>
-        <div class="inv-slot">SQL</div>
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Python"><path fill="#3776AB" d="M24 8c-7.2 0-6.7 3.1-6.7 3.1v3.2h6.8v1H14.2C9.7 15.3 8 18.6 8 24c0 5.4 1.8 8.7 6.2 8.7h4.1v-3.9h-3.9c-2.7 0-2.9-1.8-2.9-2.9 0-1.1.2-3 2.9-3h5V24c0-3.8-.6-6.7 6.7-6.7h3.8v-3.1C34.2 11.2 31.8 8 24 8zm-6.2 5.5c1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4zm12.5 2.4h-1.1v3.9h1.1c2.7 0 2.9 1.8 2.9 2.9 0 1.1-.2 3-2.9 3H19.9v4.1h5.5c4.5 0 6.2-3.3 6.2-8.7 0-5.4-1.7-8.7-6.2-8.7z"/></svg>
+          </div>
+          <span class="skill-name">Python</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#5382A1" d="M24 4c-1.9 0-3.5 1.6-3.5 3.5v4.5h7V10c0-1.9-1.6-3.5-3.5-3.5zm-8.2 7.9c-2.1 0-3.8 1.7-3.8 3.8v7.1h7.2v-7.1c0-2.1-1.7-3.8-3.8-3.8zm16.4 0c-2.1 0-3.8 1.7-3.8 3.8v7.1h7.2v-7.1c0-2.1-1.7-3.8-3.8-3.8zm-16.7 8.5v7.5c0 3 2.5 5.5 5.5 5.5h7.4c3 0 5.5-2.5 5.5-5.5v-7.5h-7.1v6.8c0 1.2-.9 2.1-2.1 2.1h-1.2c-1.2 0-2.1-.9-2.1-2.1v-6.8h-5.9z"/></svg>
+          </div>
+          <span class="skill-name">Java</span>
+        </div>
+
+        <div class="inv-slot skill-card skill-js">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="12" fill="#F7DF1E"/><path d="M26 42.8l-5.8-2.8v-3.4l5.4 2.6v-9.9l-5.4-2.5v-3.5l5.8-2.8v22.3zm12.3-18.9h-5.3l-3.3 12.5-3.2-12.5h-5.3L26 41.6h5.9l2.7-10.1 2.9 10.1h5.8l-4.1-17.7z" fill="#0B0B0B"/></svg>
+          </div>
+          <span class="skill-name">JavaScript</span>
+        </div>
+
+        <div class="inv-slot skill-card skill-ts">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#3178C6" d="M8 8h32v32H8z"/><path fill="#fff" d="M21.5 16.5h5.2v15.8h-5.2zm-7.3 0h5.2v15.8h-5.2zm14.8 0h8.3l-4.4 5.6 4.4 5.9h-8.3l-3.8-5.7zm-1.3 11.2h5.1v4.6h-5.1z"/></svg>
+          </div>
+          <span class="skill-name">TypeScript</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#0175C2" d="M10 8c0 0 3.2 2.2 7.2 2.2S24 8 24 8s3.2 2.2 7.2 2.2S38 8 38 8v28.2c0 0-3.2-2.2-7.2-2.2S24 36.2 24 36.2s-3.2-2.2-7.2-2.2S10 36.2 10 36.2V8zm13.9 3.8h-1.4v1.2h-.8V12h-.8v1.2h-.8V12h-1.4v1.6h1.4v1.6h.8v-1.6h.8v1.6h.8v-1.6h1.4v-1.6zm3.6 0h-1.5l-1.6 2.7-1.6-2.7h-1.5l2.5 4-2.5 4h1.5l1.6-2.7 1.6 2.7h1.5l-2.5-4 2.5-4z"/></svg>
+          </div>
+          <span class="skill-name">Dart</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#336791" d="M8 10.8c0-1.6 1.3-2.8 2.8-2.8h8.3l5.6 5.6-5.6 5.6H10.8c-1.6 0-2.8-1.3-2.8-2.8v-5.6zm10.5 15.9h10.7l5.6 5.6-5.6 5.6H18.5l-6.6-6.6 6.6-6.6zm15.6-9.8h-8.3l-5.6 5.6 5.6 5.6h8.3c1.6 0 2.8-1.3 2.8-2.8v-5.6c0-1.6-1.2-2.8-2.8-2.8z"/></svg>
+          </div>
+          <span class="skill-name">SQL</span>
+        </div>
       </div>
     </div>
 
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_web">Web</div>
       <div class="inv-grid">
-        <div class="inv-slot">HTML</div>
-        <div class="inv-slot">CSS</div>
-        <div class="inv-slot">Bootstrap</div>
-        <div class="inv-slot">Flutter</div>
-        <div class="inv-slot">Ionic</div>
-        <div class="inv-slot">Responsive Design</div>
+        <div class="inv-slot skill-card skill-html">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#E44D26" d="M6 6l3.5 31.5L24 42l14.5-4.5L42 6zm10.9 11h13.7l-.4 4.2h-12.9l.4 4.4 5.4 1.5 5.4-1.5.7-7.2H16l-.8-8.4h19.6l-.2 2.5H18.2l.2 3.2h12.3l-.5 6.2-5.1 1.4-5.1-1.4-.4-3.7H17z"/></svg>
+          </div>
+          <span class="skill-name">HTML</span>
+        </div>
+
+        <div class="inv-slot skill-card skill-css">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#1572B6" d="M8 6l3.5 31.5L24 42l12.5-4.5L40 6zm17.6 26.2-6.9-2.2 1.1-4.9h4.9v-4h-9l.3-2.9h12.7l-.5 5.1h-7.2l-.2 2.1 6.5 2.1 1.1-8.7H18l-.3-3.1h15.4l-.8 7.2-.4 3.8-5.7 1.8z"/></svg>
+          </div>
+          <span class="skill-name">CSS</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Bootstrap"><defs><linearGradient id="bootGrad" x1="0" x2="1"><stop offset="0%" stop-color="#7A4DFF"/><stop offset="100%" stop-color="#4D2FB3"/></linearGradient></defs><rect x="6" y="6" width="36" height="36" rx="10" fill="url(#bootGrad)"/><path fill="#fff" d="M14 16.5h9.5c5 0 8.3 2.7 8.3 7.2 0 3.5-2.2 5.9-5.8 6.7l5.1 7.8h-5.4l-4.5-7.1H18v7.1h-4zm4 3.8v7.3h5.4c2.9 0 4.7-1.3 4.7-3.7 0-2.2-1.8-3.6-4.7-3.6z"/></svg>
+          </div>
+          <span class="skill-name">Bootstrap</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#02569B" d="M7 18.8 24 7l17 11.8v11.2L24 41 7 30V18.8zm17-8.5L12.1 20 24 27.1 35.9 20 24 10.3zm-9 12.9 8.9 6.2v-9.6l-8.9-6.2v9.6zm18 0v-9.6l-8.9 6.2v9.6l8.9-6.2z"/></svg>
+          </div>
+          <span class="skill-name">Flutter</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Ionic"><rect x="6" y="6" width="36" height="36" rx="12" fill="#4D8AF0"/><path fill="#fff" d="M24 12.5c-6.3 0-11.5 5.2-11.5 11.5S17.7 35.5 24 35.5 35.5 30.3 35.5 24 30.3 12.5 24 12.5zm0 3.8c4.2 0 7.7 3.4 7.7 7.7 0 4.3-3.5 7.8-7.7 7.8s-7.7-3.5-7.7-7.8c0-4.3 3.5-7.7 7.7-7.7zm-6.2 14.3h12.4v3.5H17.8z"/><path fill="#A9D1FF" d="M17.8 29.3h12.4v3.5H17.8z"/></svg>
+          </div>
+          <span class="skill-name">Ionic</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Responsive"><rect x="8" y="10" width="32" height="24" rx="4" fill="#1B2F6B"/><rect x="12" y="14" width="24" height="16" rx="2" fill="#6EA8FF"/><rect x="18" y="32" width="12" height="4" rx="2" fill="#1B2F6B"/><path fill="#A8C8FF" d="M16 20h16v2H16zm0 4h10v2H16zm0 4h6v2h-6z"/></svg>
+          </div>
+          <span class="skill-name">Responsive</span>
+        </div>
       </div>
     </div>
 
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_backend">Back-end</div>
       <div class="inv-grid">
-        <div class="inv-slot">Node.js</div>
-        <div class="inv-slot">Express.js</div>
-        <div class="inv-slot">Prisma</div>
-        <div class="inv-slot">Supabase</div>
-        <div class="inv-slot">API REST</div>
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#339933" d="M24 8c-8.8 0-16 6.2-16 14.1 0 4.1 2.3 7.8 6 10.5v7.1l8.7-5.4c1 .1 2 .2 3.3.2 8.8 0 16-6.2 16-14.1S32.8 8 24 8zm-1.1 18.4h-5.6v-4.2h5.6v-5.4h4.2v5.4h5.6v4.2h-5.6v5.7h-4.2v-5.7z"/></svg>
+          </div>
+          <span class="skill-name">Node.js</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Express.js"><rect x="6" y="6" width="36" height="36" rx="10" fill="#1F2937"/><path fill="#fff" d="M15 17h12.8c4.7 0 7.7 2.7 7.7 6.8 0 4.2-3.1 6.8-7.8 6.8H19v6.4h-4zm4 3.8v6.2h7.2c2.7 0 4.2-1.2 4.2-3.1 0-1.8-1.5-3.1-4.1-3.1zm11.8 17.8h4V17h-4z"/></svg>
+          </div>
+          <span class="skill-name">Express.js</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Prisma"><rect x="6" y="6" width="36" height="36" rx="10" fill="#1E1E2E"/><path fill="#6A67F1" d="M24 11.5 15.8 35l8.2-4.5 8.2 4.5zm0 2.7 6.9 18.1-6.9-3.8-6.9 3.8z"/><path fill="#A5A6FF" d="M24 11.5v22.1l-8.2-4.5z"/><path fill="#C8C9FF" d="M24 11.5v22.1l8.2-4.5z"/></svg>
+          </div>
+          <span class="skill-name">Prisma</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Supabase"><rect x="6" y="6" width="36" height="36" rx="12" fill="#0D1A1E"/><path fill="#3ECF8E" d="M28.8 10.5c-1.1 0-2 .8-2 1.9v8.8h-6.4c-1.1 0-2 .9-2 2.1 0 1.1.9 2 2 2h6.4v7.7c0 1.1.9 1.9 2 1.9s2-.8 2-1.9v-7.7h7.5c1.1 0 2-.9 2-2.1 0-1.1-.9-2-2-2h-7.5v-8.8c0-1.1-.9-1.9-2-1.9z"/><path fill="#9AE6C9" d="M17.6 30.3c-2.5 0-4.5 2-4.5 4.5 0 2.5 2 4.5 4.5 4.5h10.3l-1.6-3.8H17.6c-.9 0-1.5-.6-1.5-1.5 0-.9.6-1.5 1.5-1.5h7.8l1.6-3.8h-9.4z"/></svg>
+          </div>
+          <span class="skill-name">Supabase</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo initials" aria-hidden="true">R</div>
+          <span class="skill-name">API REST</span>
+        </div>
       </div>
     </div>
 
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_mobile">Mobile</div>
       <div class="inv-grid">
-        <div class="inv-slot">Flutter</div>
-        <div class="inv-slot">Dart</div>
-        <div class="inv-slot">Capacitor</div>
-        <div class="inv-slot">UI/UX Mobile</div>
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#02569B" d="M7 18.8 24 7l17 11.8v11.2L24 41 7 30V18.8zm17-8.5L12.1 20 24 27.1 35.9 20 24 10.3zm-9 12.9 8.9 6.2v-9.6l-8.9-6.2v9.6zm18 0v-9.6l-8.9 6.2v9.6l8.9-6.2z"/></svg>
+          </div>
+          <span class="skill-name">Flutter</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#0175C2" d="M10 8c0 0 3.2 2.2 7.2 2.2S24 8 24 8s3.2 2.2 7.2 2.2S38 8 38 8v28.2c0 0-3.2-2.2-7.2-2.2S24 36.2 24 36.2s-3.2-2.2-7.2-2.2S10 36.2 10 36.2V8zm13.9 3.8h-1.4v1.2h-.8V12h-.8v1.2h-.8V12h-1.4v1.6h1.4v1.6h.8v-1.6h.8v1.6h.8v-1.6h1.4v-1.6zm3.6 0h-1.5l-1.6 2.7-1.6-2.7h-1.5l2.5 4-2.5 4h1.5l1.6-2.7 1.6 2.7h1.5l-2.5-4 2.5-4z"/></svg>
+          </div>
+          <span class="skill-name">Dart</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo initials" aria-hidden="true">C</div>
+          <span class="skill-name">Capacitor</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo initials" aria-hidden="true">UX</div>
+          <span class="skill-name">UI/UX</span>
+        </div>
       </div>
     </div>
 
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_data">Données</div>
       <div class="inv-grid">
-        <div class="inv-slot">SQL</div>
-        <div class="inv-slot">MySQL</div>
-        <div class="inv-slot">PostgreSQL</div>
-        <div class="inv-slot">Prisma</div>
-        <div class="inv-slot">Supabase</div>
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#336791" d="M8 10.8c0-1.6 1.3-2.8 2.8-2.8h8.3l5.6 5.6-5.6 5.6H10.8c-1.6 0-2.8-1.3-2.8-2.8v-5.6zm10.5 15.9h10.7l5.6 5.6-5.6 5.6H18.5l-6.6-6.6 6.6-6.6zm15.6-9.8h-8.3l-5.6 5.6 5.6 5.6h8.3c1.6 0 2.8-1.3 2.8-2.8v-5.6c0-1.6-1.2-2.8-2.8-2.8z"/></svg>
+          </div>
+          <span class="skill-name">SQL</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="MySQL"><rect x="6" y="6" width="36" height="36" rx="10" fill="#E8F4FF"/><path fill="#00758F" d="M15 15.5c0-1.5 1.2-2.7 2.7-2.7h9.8c6.7 0 12.5 4 12.5 10 0 5.5-4.7 9.1-12.5 9.1h-4.6v5.5h-4.1zm4.1 3.8v9.2h5c4.7 0 7.6-1.8 7.6-4.6 0-2.8-2.9-4.6-7.6-4.6zm15 14.9h4.8v3.8H15v-3.8h4.8v-5.5h-4.8v-3.8h19.3z"/><path fill="#005F7A" d="M19.1 19.3h5.3c2.2 0 3.5 1 3.5 2.5 0 1.6-1.3 2.7-3.5 2.7h-5.3z"/></svg>
+          </div>
+          <span class="skill-name">MySQL</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="PostgreSQL"><rect x="6" y="6" width="36" height="36" rx="10" fill="#F3F7FF"/><path fill="#336791" d="M17.5 15.8c0-1.5 1.2-2.8 2.8-2.8h10.4c2.8 0 5.1 1.9 5.1 4.3 0 2.2-1.4 3.9-3.6 4.5l4.4 8.5h-5.3l-3.9-7.7h-5.7v7.7h-4.2zm4.2 3.6v5.4h5.8c1.7 0 2.9-1 2.9-2.7 0-1.7-1.2-2.7-2.9-2.7z"/><path fill="#4C9EEB" d="M14 32.2h20v3.6H14z"/></svg>
+          </div>
+          <span class="skill-name">PostgreSQL</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Prisma"><rect x="6" y="6" width="36" height="36" rx="10" fill="#1E1E2E"/><path fill="#6A67F1" d="M24 11.5 15.8 35l8.2-4.5 8.2 4.5zm0 2.7 6.9 18.1-6.9-3.8-6.9 3.8z"/><path fill="#A5A6FF" d="M24 11.5v22.1l-8.2-4.5z"/><path fill="#C8C9FF" d="M24 11.5v22.1l8.2-4.5z"/></svg>
+          </div>
+          <span class="skill-name">Prisma</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Supabase"><rect x="6" y="6" width="36" height="36" rx="12" fill="#0D1A1E"/><path fill="#3ECF8E" d="M28.8 10.5c-1.1 0-2 .8-2 1.9v8.8h-6.4c-1.1 0-2 .9-2 2.1 0 1.1.9 2 2 2h6.4v7.7c0 1.1.9 1.9 2 1.9s2-.8 2-1.9v-7.7h7.5c1.1 0 2-.9 2-2.1 0-1.1-.9-2-2-2h-7.5v-8.8c0-1.1-.9-1.9-2-1.9z"/><path fill="#9AE6C9" d="M17.6 30.3c-2.5 0-4.5 2-4.5 4.5 0 2.5 2 4.5 4.5 4.5h10.3l-1.6-3.8H17.6c-.9 0-1.5-.6-1.5-1.5 0-.9.6-1.5 1.5-1.5h7.8l1.6-3.8h-9.4z"/></svg>
+          </div>
+          <span class="skill-name">Supabase</span>
+        </div>
       </div>
     </div>
 
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_security">Sécurité & Réseaux</div>
       <div class="inv-grid">
-        <div class="inv-slot">Cisco Packet Tracer</div>
-        <div class="inv-slot">RSA</div>
-        <div class="inv-slot">ElGamal</div>
-        <div class="inv-slot">Diffie-Hellman</div>
-        <div class="inv-slot">Cryptographie</div>
-        <div class="inv-slot">Sécurité réseau</div>
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Cisco"><rect x="6" y="6" width="36" height="36" rx="10" fill="#EAF4FF"/><path fill="#1E88E5" d="M24 12c-5.9 0-10.7 4.8-10.7 10.7S18.1 33.4 24 33.4c5.9 0 10.7-4.8 10.7-10.7S29.9 12 24 12zm0 3.7c3.9 0 7 3.1 7 7 0 3.8-3.1 7-7 7s-7-3.2-7-7c0-3.9 3.1-7 7-7zm-5.2 7.2h10.4v3.5H18.8z"/><path fill="#0B4CA2" d="M18.8 17.8h10.4v3.5H18.8zm0 8.8h10.4v3.5H18.8z"/></svg>
+          </div>
+          <span class="skill-name">Cisco</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="RSA"><rect x="6" y="6" width="36" height="36" rx="10" fill="#F5F3FF"/><path fill="#7C3AED" d="M18 15.5c0-2.2 1.8-4 4-4h8.6v4h-8.4v3.5h8.8v3.8h-8.8v4.7h8.4v4h-8.6c-2.2 0-4-1.8-4-4zm11.5 11.7h5.5v4h-5.5z"/><circle cx="30" cy="24" r="9.5" fill="none" stroke="#7C3AED" stroke-width="2.2"/></svg>
+          </div>
+          <span class="skill-name">RSA</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="ElGamal"><rect x="6" y="6" width="36" height="36" rx="10" fill="#FFF1F1"/><path fill="#D946EF" d="M15 16.5h18v4H15zm0 8h18v4H15zm0 8h11v4H15z"/><circle cx="31" cy="24" r="6.5" fill="none" stroke="#D946EF" stroke-width="2.2"/></svg>
+          </div>
+          <span class="skill-name">ElGamal</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Diffie-Hellman"><rect x="6" y="6" width="36" height="36" rx="10" fill="#ECFEFF"/><path fill="#0EA5E9" d="M16 15.5c0-1.9 1.5-3.4 3.4-3.4h9.2c1.9 0 3.4 1.5 3.4 3.4v3.8h-3.5v-3.3h-9.1v3.3h-3.4zm-1.1 7.8h20.2v3.6H14.9zm0 8h20.2v3.6H14.9z"/><circle cx="17" cy="24" r="2.7" fill="#0EA5E9"/><circle cx="31" cy="24" r="2.7" fill="#0EA5E9"/></svg>
+          </div>
+          <span class="skill-name">Diffie-Hellman</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Cryptographie"><rect x="6" y="6" width="36" height="36" rx="10" fill="#FDF2F8"/><path fill="#EC4899" d="M24 10.5c-5.5 0-10 3.9-10 8.8v4.6h3.4v-4.6c0-3.1 3.1-5.5 6.6-5.5s6.6 2.4 6.6 5.5v4.6h3.4v-4.6c0-4.9-4.5-8.8-10-8.8zm-9.8 16.4h19.6v10.1H14.2zm3.9 3.5v3.1h11.8v-3.1z"/><circle cx="24" cy="24" r="2.3" fill="#EC4899"/></svg>
+          </div>
+          <span class="skill-name">Cryptographie</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Sécurité réseau"><rect x="6" y="6" width="36" height="36" rx="10" fill="#ECFDF5"/><path fill="#10B981" d="M13 21.8c0-2.5 1.9-4.5 4.3-4.5h13.4c2.4 0 4.3 2 4.3 4.5v10c0 2.5-1.9 4.5-4.3 4.5H17.3c-2.4 0-4.3-2-4.3-4.5zm8.5-7.4V12h6.8v2.4h-6.8zm6.2 8.5h-10v3.5h10zm-10 6.9h10v3.5h-10z"/><circle cx="31" cy="21" r="2.3" fill="#10B981"/></svg>
+          </div>
+          <span class="skill-name">Sécurité réseau</span>
+        </div>
       </div>
     </div>
 
     <div class="inv-category">
       <div class="inv-cat-label" data-i18n="cat_tools">Outils</div>
       <div class="inv-grid">
-        <div class="inv-slot">Git</div>
-        <div class="inv-slot">GitHub</div>
-        <div class="inv-slot">VS Code</div>
-        <div class="inv-slot">StarUML</div>
-        <div class="inv-slot">PlantUML</div>
-        <div class="inv-slot">Postman</div>
-        <div class="inv-slot">Figma</div>
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#F05032" d="M25.8 8.5c-1.3 0-2.5.4-3.5 1.1l-9.2 6.6c-1.4 1-2.2 2.7-2.2 4.5v8.8c0 1.7.8 3.3 2.2 4.4l9.2 6.5c1 .7 2.2 1.1 3.5 1.1 2.8 0 5-2.2 5-5v-9.3l-4.9-3.6v8.1l-7.1 5.1-7.2-5.1v-7l9.7-6.9 7.2 5.1v-8.3c0-2.8-2.2-5-5-5zm-5.2 12.7l-2.7 1.9v-3.7l2.7-1.8 2.7 1.8v3.7l-2.7-1.9z"/></svg>
+          </div>
+          <span class="skill-name">Git</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#111827" d="M24 7.5A16.5 16.5 0 1 0 40.5 24 16.5 16.5 0 0 0 24 7.5zm8.4 19.6c-.3 1.6-1.6 2.7-3.3 2.7H18.2c-1.8 0-3.1-1.1-3.3-2.7l-1.6-8.2c-.2-1.4.6-2.8 2-3.1l4.6-1.1v-2.2c0-.8.6-1.4 1.4-1.4h3.2c.8 0 1.4.6 1.4 1.4v2.2l4.6 1.1c1.4.3 2.2 1.7 2 3.1l-1.5 8.2zm-11.5-8.9h7.1l-.3 1.8h-6.5zm9.3 5.1c0 1-.8 1.8-1.8 1.8h-9.4c-1 0-1.8-.8-1.8-1.8V24c0-1 .8-1.8 1.8-1.8h9.4c1 0 1.8.8 1.8 1.8v.3z"/></svg>
+          </div>
+          <span class="skill-name">GitHub</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="VS Code"><rect x="6" y="6" width="36" height="36" rx="10" fill="#0F172A"/><path fill="#1EA0FF" d="M30.1 14 17.9 23l-5.1-3.8-2.9 1.6 6.8 5.2-6.8 5.2 2.9 1.6 5.1-3.8 12.2 9.1 7.6-3.7V17.7zm0 5.7v12.6l-8.7-6.3zm-12.3 6.3 3.6 2.7-3.6 2.7z"/></svg>
+          </div>
+          <span class="skill-name">VS Code</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="StarUML"><rect x="6" y="6" width="36" height="36" rx="10" fill="#F8FAFC"/><path fill="#F59E0B" d="M24 11.5l4.2 8.5 9.4 1.4-6.8 6.6 1.6 9.4-8.4-4.4-8.4 4.4 1.6-9.4-6.8-6.6 9.4-1.4z"/><circle cx="24" cy="24" r="4.6" fill="#fff"/></svg>
+          </div>
+          <span class="skill-name">StarUML</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="PlantUML"><rect x="6" y="6" width="36" height="36" rx="10" fill="#E8F5E9"/><path fill="#2E7D32" d="M14 18.5h20v4H14zm0 7h20v4H14zm0 7h12v4H14zm20-14h-8v18h8z"/><path fill="#66BB6A" d="M30 14h4v20h-4z"/></svg>
+          </div>
+          <span class="skill-name">PlantUML</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Postman"><rect x="6" y="6" width="36" height="36" rx="10" fill="#FF6C37"/><path fill="#fff" d="M24 12.5c-6.4 0-11.5 5.2-11.5 11.5 0 4.7 2.8 8.8 6.9 10.6v4.4h9.2v-4.4c4.1-1.8 6.9-5.9 6.9-10.6 0-6.3-5.1-11.5-11.5-11.5zm-7.1 9.1h14.2v2.9H16.9zm1.8 5.3h10.6v2.9H18.7z"/><circle cx="24" cy="24" r="3.2" fill="#FF6C37"/></svg>
+          </div>
+          <span class="skill-name">Postman</span>
+        </div>
+
+        <div class="inv-slot skill-card">
+          <div class="skill-logo" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path fill="#F24E1E" d="M21.5 9.5c-2.4 0-4.6 1.3-5.8 3.2l-5.8 10.9c-1.4 2.5-.5 5.6 2 7l7 4.1c1.7 1 3.8 1 5.5-.1l8.1-5.2c2.1-1.3 3.2-3.8 2.6-6.3l-1.7-7.1c-.8-3.4-3.9-5.8-7.4-5.8h-5.5zm4.3 8.6c2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5-4.5-2-4.5-4.5 2-4.5 4.5-4.5z"/><path fill="#FF7262" d="M18.3 31.6c-1.8 0-3.5 1-4.4 2.6l-1.8 3.5c-.9 1.7-.1 3.8 1.7 4.6l7.7 3.9c1.6.8 3.5.7 5-.2l8-4.8c1.7-1 2.6-2.9 2.2-4.8l-1.7-7-8.8 4.1c-1.5.7-3.2.9-4.9.8l-4.1-.7z"/></svg>
+          </div>
+          <span class="skill-name">Figma</span>
+        </div>
       </div>
     </div>
+
   </section>
 </main>
 
